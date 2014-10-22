@@ -1,0 +1,23 @@
+{
+  "name": "NielsOeltjenCom",
+  "version": "0.1.1",
+  "description": "Niels Oeltjen Website",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elbone/nielsoeltjen.com.git"
+  },
+  "author": "Niels Oeltjen",
+  "license": "N/A 100% copyright",
+  "bugs": {
+    "url": "https://github.com/Elbone/nielsoeltjen.com/issues"
+  },
+  "homepage": "https://github.com/Elbone/rtiq.net",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jade": "^0.13.0",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "0.5.3
+  }
+}

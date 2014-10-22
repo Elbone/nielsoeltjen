@@ -1,0 +1,5 @@
+<symbol id="icon-art" viewBox="0 0 64 64">
+	<polygon fill="#EEEEEE" points="56,64 8,64 8,0 42.2,0 56,14 "/>
+	<polygon fill="#B3B3B3" points="43,13 42,0 42,14 56,14 "/>
+	<circle fill="#222222" cx="32" cy="36" r="19"/>
+</symbol>
