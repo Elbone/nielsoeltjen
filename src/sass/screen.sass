@@ -16,7 +16,7 @@ $itemH: 64px
 
 body
 	font-family: "Fira Mono", "Lucida Console", monospace
-	background: #555
+	background: #787c80
 
 #oeltjen
 	position: fixed
@@ -55,13 +55,14 @@ body
 			font-size: 14px
 			font-style: normal
 			text-transform: capitalize
+			line-height: 1.5
 			top: 100%
 			left: -32px
 			right: -32px
-			color: #ccc
+			color: #ddd
 			padding-top: 8px
 			text-align: center
-			+prefix("text-shadow", "1px 2px 3px #111")
+			+prefix("text-shadow", "1px 2px 3px #222")
 			
 	a:hover span i
 		color: #ffffff
@@ -80,44 +81,15 @@ body
 
 
 #about
-	background-color: #222
-	padding: 6px
-	text-align: center
-	position: relative
-	z-index: 2
-		
-	h1, h2, p 
-		display: inline
+	background-color: #eee
+	padding: 6px		
+	h1	
 		font-size: 14px
-		font-style: normal
-		top: 100%
-		left: -32px
-		right: -32px
-		color: #ccc
-		padding-top: 8px
+		font-weight: normal
+		text-align: center
+		line-height: 1.25
+		color: #555
 		
-		+prefix("text-shadow", "1px 2px 3px #111")
 
-
-	.close
-		position: absolute
-		top: 0
-		right: 0
-		a
-			display: block
-			height: 48px
-			width: 48px
-			font-size: 24px
-			line-height: 48px
-			color: white
-			text-decoration: none
-			text-align: center
-			&:hover	
-				background-color: #ffffff
-				color: #000000
-		
-[state="about"] #about
-	z-index: 5
-	opacity: 0.999
 
 
