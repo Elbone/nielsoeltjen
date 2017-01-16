@@ -3,8 +3,8 @@ if (document.addEventListener) {
 	window.loadedWidth = window.innerWidth;
 
 	var doIconsShuffle = function () {
-		var Wrap = document.getElementById("items");
-		var Items = Wrap.querySelectorAll('span');
+		var Wrap = document.getElementById('items');
+		var Items = Wrap.querySelectorAll('a');
 		[].forEach.call(Items, function (Element, Index){
 			var TopBottom = Math.random() < 0.5 ? 'top' : 'bottom';
 			var LeftRight = Math.random() < 0.5 ? 'left' : 'right';

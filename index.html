@@ -15,14 +15,10 @@ layout: default
   {% for item in site.data.items %}
     <li class="{{ item.slug}}">
       <a href="{{ item.href }}" target="_blank" id="link-{{ item.slug }}">
-        <span>
-          <i>{{ item.label }}</i>
-          <b>
-            <svg class="icon">
-              <use xlink:href="#icon-{{ item.slug }}"></use>
-            </svg>
-          </b>
-        </span>
+        <svg class="icon">
+          <use xlink:href="#icon-{{ item.slug }}"></use>
+        </svg>
+        <i>{{ item.label }}</i>
       </a>
     </li>
   {% endfor %}

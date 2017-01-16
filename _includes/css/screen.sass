@@ -28,36 +28,37 @@ body
 #items 
 	max-width: 1024px
 	text-align: center
-	padding: 32px 16px 32px 16px
+	padding: 16px
 	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
 	li
 		position: relative
-		display: inline-block
-		width: $itemW*3
-		height: $itemH*3
+		display: block
+		width: $itemW*2
+		height: $itemH*2
 		// outline: 1px solid yellow
-	span
+		@media only screen and (min-width: 600px)
+			width: $itemW*3
+			height: $itemH*3
+
+	a
 		position: absolute
 		display: block
 		width: $itemW
 		height: $itemH
-		margin: 0 auto
 		+prefix("transition", "all 400ms ease")
-		
-		b
-			line-height: $itemH
-		i
-			+dropshadow
-			position: absolute
-			top: 100%
-			left: -32px
-			right: -32px
-			color: #ddd
-			padding-top: 8px
-			text-align: center
-			
-			
-	a:hover span i
+	i
+		+dropshadow
+		position: absolute
+		top: 100%
+		left: -32px
+		right: -32px
+		color: #ddd
+		padding-top: 8px
+		text-align: center				
+	a:hover i
 		color: #ffffff
 	svg
 		width: $itemW
@@ -65,16 +66,10 @@ body
 		display: block
 		vertical-align: top	
 
-@media only screen and (max-width: 600px)
-	#items 
-		padding: 32px 8px 64px 8px
-		li
-			width: $itemW*2
-			height: $itemH*2.5
 
 
 #about
-	margin: 32px 16px 16px 16px
+	margin: 32px 16px 0px 16px
 	h1, h2, h3
 		margin: 0
 		font-size: 14px
@@ -87,6 +82,7 @@ body
 		padding: 6px 12px
 		color: #555
 
+
 #email
 	margin: 16px 16px 16px 16px
 	text-align: center
@@ -96,6 +92,8 @@ body
 		padding: 6px 12px
 		color: #eee
 		text-decoration: none
+	a:hover
+		color: #ffffff
 		
 
 #warn
