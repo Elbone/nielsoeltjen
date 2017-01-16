@@ -22,21 +22,6 @@ if (document.addEventListener) {
 			Element.style[LeftRight] = HorPos+'%';
 		});
 	}
-	document.addEventListener('DOMContentLoaded', function() {
-		var About = document.getElementById('about');
-		var Open = document.getElementById('link-about');
-		var Close = document.getElementById('close-about');
-		Open.addEventListener('click', function (event) {
-			event.preventDefault();
-			document.documentElement.setAttribute('state', 'about');
-			return false;
-		});
-		Close.addEventListener('click', function (event) {
-			event.preventDefault();
-			document.documentElement.setAttribute('state', '');
-			return false;
-		});
-	});
 };
 
 document.addEventListener('DOMContentLoaded', function() {
