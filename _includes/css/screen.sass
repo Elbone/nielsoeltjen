@@ -1,0 +1,102 @@
+$itemW: 64px
+$itemH: 64px
+
+=prefix($name, $argument)
+	$name: unquote($name)
+	$argument: unquote($argument)
+	-webkit-#{$name}: #{$argument}
+	-ms-#{$name}: #{$argument}
+	-moz-#{$name}: #{$argument}
+	-o-#{$name}: #{$argument}
+	#{$name}: #{$argument}
+
+*
+	padding: 0
+	margin: 0
+
+body
+	font-family: "Fira Mono", "Lucida Console", monospace
+	background: #787c80
+
+#oeltjen
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding: 16px
+	overflow: hidden
+	svg
+		width: 100%
+		height: auto
+
+#items 
+	max-width: 1024px
+	text-align: center
+	padding: 32px 16px 64px 16px
+	margin: 0 auto
+	li
+		position: relative
+		display: inline-block
+		width: $itemW*3
+		height: $itemH*3
+		// outline: 1px solid yellow
+	span
+		position: absolute
+		display: block
+		width: $itemW
+		height: $itemH
+		margin: 0 auto
+		+prefix("transition", "all 400ms ease")
+		
+		b
+			line-height: $itemH
+		i
+			position: absolute
+			font-size: 14px
+			font-style: normal
+			text-transform: capitalize
+			line-height: 1.5
+			top: 100%
+			left: -32px
+			right: -32px
+			color: #ddd
+			padding-top: 8px
+			text-align: center
+			+prefix("text-shadow", "1px 2px 3px #222")
+			
+	a:hover span i
+		color: #ffffff
+	svg
+		width: $itemW
+		height: $itemH
+		display: block
+		vertical-align: top	
+
+@media only screen and (max-width: 600px)
+	#items 
+		padding: 32px 8px 64px 8px
+		li
+			width: $itemW*2
+			height: $itemH*2.5
+
+
+#about
+	background-color: #eee
+	padding: 6px		
+	h1	
+		font-size: 14px
+		font-weight: normal
+		text-align: center
+		line-height: 1.25
+		color: #555
+		
+
+#warn
+	padding: 16px 8px
+	font-size: 14px
+	font-weight: normal
+	text-align: center
+	line-height: 1.25
+	color: white
+	background: red
+
