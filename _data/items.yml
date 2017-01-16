@@ -1,0 +1,35 @@
+- slug: email
+  label: Email me
+  href: "#please-turn-on-javascript"
+
+- slug: art
+  label: Art folio
+  href: "http://nails.net.au/"
+
+- slug: digital
+  label: Digital folio
+  href: "http://elbone.com.au/"
+
+- slug: github
+  label: Github
+  href: "http://github.com/Elbone"
+
+- slug: twitter
+  label: Twitter
+  href: "http://twitter.com/nielsoeltjen"
+
+- slug: instagram
+  label: Instagram
+  href: "http://instagram.com/nielsoeltjen"
+
+- slug: codepen
+  label: Codepen
+  href: "http://codepen.io/NielsOeltjen"
+
+- slug: dribbble
+  label: Dribbble
+  href: "http://dribbble.com/nielsoeltjen"
+
+- slug: ello
+  label: Ello
+  href: "https://ello.co/niels"
