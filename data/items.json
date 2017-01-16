@@ -1,6 +1,5 @@
 {
 	"items": {
-		"about" : 		["About" , "#about"],
 		"email" : 		["Email me", "#please-turn-on-javascript"],
 		"art" : 		["Art folio", "http://nails.net.au/"],
 		"digital" : 	["Digital folio", "http://elbone.com.au/"],
