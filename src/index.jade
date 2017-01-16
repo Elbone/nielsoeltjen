@@ -9,6 +9,9 @@ html.no-js(lang='en-US')
 		meta(http-equiv='cleartype', content='on')
 		meta(charset="utf-8") 
 
+		//- SEO
+		met(name="description", content="Artist and digital creator. Contact me or discover more about me.")
+
 		//- Facebook Open Graph Meta Tags 
 		meta(property='og:title', content='Niels Oeltjen')
 		meta(property='og:type', content='website')
@@ -44,7 +47,12 @@ html.no-js(lang='en-US')
 		<![endif]-->
 			
 
-		//- Links
+		div#about
+			div.inner
+				h1 Niels Oeltjen
+				h2 Artist and Digital Maker
+				p Links to various creative projects and places of interest
+							
 
 		//- Render svg
 		svg(xmlns='http://www.w3.org/2000/svg', style='display: none;')
@@ -73,24 +81,5 @@ html.no-js(lang='en-US')
 								svg.icon
 									use(xlink:href='#icon-'+name)
 
-		div#about
-			div.close
-				a#close-about(href="#") &times;
-			div.inner
-				p 
-					b h1
-					span Niels Oeltjen
-				p 
-					b h2
-					span A.K.A Nails
-				p 
-					b p
-					span Artist and Digital Maker
-				p 
-					b p
-					span Links to various creative projects and places of interest
-				p 
-					b p
-					span I used to make street art dintchaknow?
-							
+
 						
