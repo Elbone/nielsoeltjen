@@ -22,11 +22,10 @@ if (document.addEventListener) {
 	};
 
 	var doEmailLink = function () {
-		var Add = 'niels#nielsoeltjen+com'.replace('#', '@').replace('+', '.');
+		var El = document.getElementById('email-link');
+		var Add = El.getAttribute('mailto').replace('#', '@').replace('+', '.');
 		var MailTo = 'mailto:' + Add;
-		var El = document.getElementById('link-email');
 		El.setAttribute('href', MailTo);
-		El.setAttribute('target', '');
 	}
 
 	document.addEventListener('DOMContentLoaded', function(event) {

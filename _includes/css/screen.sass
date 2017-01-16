@@ -10,6 +10,13 @@ $itemH: 64px
 	-o-#{$name}: #{$argument}
 	#{$name}: #{$argument}
 
+=dropshadow()
+	+prefix("text-shadow", "1px 2px 3px #222")
+	font-size: 14px
+	font-style: normal
+	line-height: 1.5
+
+
 *
 	padding: 0
 	margin: 0
@@ -18,21 +25,10 @@ body
 	font-family: "Fira Mono", "Lucida Console", monospace
 	background: #787c80
 
-#oeltjen
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	padding: 16px
-	overflow: hidden
-	svg
-		width: 100%
-		height: auto
-
 #items 
 	max-width: 1024px
 	text-align: center
-	padding: 32px 16px 64px 16px
+	padding: 32px 16px 32px 16px
 	margin: 0 auto
 	li
 		position: relative
@@ -51,18 +47,15 @@ body
 		b
 			line-height: $itemH
 		i
+			+dropshadow
 			position: absolute
-			font-size: 14px
-			font-style: normal
-			text-transform: capitalize
-			line-height: 1.5
 			top: 100%
 			left: -32px
 			right: -32px
 			color: #ddd
 			padding-top: 8px
 			text-align: center
-			+prefix("text-shadow", "1px 2px 3px #222")
+			
 			
 	a:hover span i
 		color: #ffffff
@@ -81,14 +74,28 @@ body
 
 
 #about
-	background-color: #eee
-	padding: 6px		
-	h1	
+	margin: 32px 16px 16px 16px
+	h1, h2, h3
+		margin: 0
 		font-size: 14px
 		font-weight: normal
-		text-align: center
 		line-height: 1.25
+		text-align: center
+	span
+		display: inline-block
+		background-color: #eee
+		padding: 6px 12px
 		color: #555
+
+#email
+	margin: 16px 16px 16px 16px
+	text-align: center
+	a
+		+dropshadow
+		display: inline-block
+		padding: 6px 12px
+		color: #eee
+		text-decoration: none
 		
 
 #warn
