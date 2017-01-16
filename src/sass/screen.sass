@@ -80,30 +80,25 @@ body
 
 
 #about
-	position: fixed
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	z-index: -1
-	opacity: 0
-	background-color: rgba(#000000, 0.85)
-	// background-image: url('assets/bg.gif')
-	overflow-y: scroll
-	padding: 16px
-	+prefix("transition", "all 240ms ease")
-	.inner
-		font-size: 16px
-		color: white
-		max-width: 640px
-		margin: 0 auto
-	p 
-		span
-			color: #ffffff
-		b 
-			color: #aa03e8
-			&:after
-				content: " "
+	background-color: #222
+	padding: 8px
+	text-align: center
+	position: relative
+	z-index: 2
+		
+	h1, h2, p 
+		display: inline
+		font-size: 14px
+		font-style: normal
+		top: 100%
+		left: -32px
+		right: -32px
+		color: #ccc
+		padding-top: 8px
+		
+		+prefix("text-shadow", "1px 2px 3px #111")
+
+
 	.close
 		position: absolute
 		top: 0
