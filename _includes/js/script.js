@@ -22,7 +22,7 @@ if (document.addEventListener) {
 	};
 
 	var doEmailLink = function () {
-		var El = document.getElementById('email-link');
+		var El = document.getElementById('link-email');
 		var Add = El.getAttribute('mailto').replace('#', '@').replace('+', '.');
 		var MailTo = 'mailto:' + Add;
 		El.setAttribute('href', MailTo);

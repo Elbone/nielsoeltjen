@@ -14,7 +14,7 @@ layout: default
 <ul id="items">
   {% for item in site.data.items %}
     <li class="{{ item.slug}}">
-      <a href="{{ item.href }}" target="_blank" id="link-{{ item.slug }}">
+      <a href="{{ item.href }}" target="_blank" id="link-{{ item.slug }}" {% if item.mailto %}mailto={{ item.mailto }}{% endif %}>
         <svg class="icon">
           <use xlink:href="#icon-{{ item.slug }}"></use>
         </svg>

@@ -6,6 +6,10 @@
   label: Digital folio
   href: "http://elbone.com.au/"
 
+- slug: wilkintie
+  label: Wilkintie
+  href: "http://wilkintie.com/"
+
 - slug: github
   label: Github
   href: "http://github.com/Elbone"
@@ -29,3 +33,8 @@
 - slug: ello
   label: Ello
   href: "https://ello.co/niels"
+
+- slug: email
+  label: Email me
+  href: "#please-enable-javascript"
+  mailto: "niels#nielsoeltjen+com"
