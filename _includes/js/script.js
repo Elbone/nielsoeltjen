@@ -33,13 +33,4 @@ if (document.addEventListener) {
 		doEmailLink();
 	});
 
-	window.onresize = function (event) {
-
-		console.log("onresize", window.loadedWidth, window.innerWidth);
-		if (window.innerWidth !== window.loadedWidth) {
-			doIconsShuffle();
-			window.loadedWidth = window.innerWidth;
-		}
-	}
-
 };
