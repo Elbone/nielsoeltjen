@@ -22,18 +22,6 @@
   label: Codepen
   href: "http://codepen.io/NielsOeltjen"
 
-- slug: dribbble
-  label: Dribbble
-  href: "http://dribbble.com/nielsoeltjen"
-
-- slug: ello
-  label: Ello
-  href: "https://ello.co/niels"
-
-- slug: soundcloud
-  label: Soundcloud
-  href: "https://soundcloud.com/nielsoeltjen"
-
 - slug: email
   label: Email me
   href: "#please-enable-javascript"
