@@ -2,6 +2,10 @@
   label: Art folio
   href: "http://nails.net.au/"
 
+- slug: elbone
+  label: Design & Dev
+  href: "https://elbone.github.com/"
+
 - slug: wilkintie
   label: Wilkintie
   href: "http://wilkintie.com/"
