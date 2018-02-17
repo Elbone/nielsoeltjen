@@ -14,6 +14,10 @@
   label: Github
   href: "http://github.com/Elbone"
 
+- slug: angellist
+  label: Angel list
+  href: "https://angel.co/nielsoeltjen"
+
 - slug: twitter
   label: Twitter
   href: "http://twitter.com/nielsoeltjen"
