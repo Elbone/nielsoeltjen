@@ -10,6 +10,11 @@
   label: Wilkintie
   href: "http://wilkintie.com/"
 
+- slug: email
+  label: Email me
+  href: "#please-enable-javascript"
+  mailto: "niels#nielsoeltjen+com"
+
 - slug: github
   label: Github
   href: "http://github.com/Elbone"
@@ -22,6 +27,10 @@
   label: Twitter
   href: "http://twitter.com/nielsoeltjen"
 
+- slug: cv
+  label: CV
+  href: "https://elbone.github.io/assets/NielsOeltjen-CV-2018.pdf"
+
 - slug: instagram
   label: Instagram
   href: "http://instagram.com/nielsoeltjen"
@@ -30,7 +39,6 @@
   label: Codepen
   href: "http://codepen.io/NielsOeltjen"
 
-- slug: email
-  label: Email me
-  href: "#please-enable-javascript"
-  mailto: "niels#nielsoeltjen+com"
+- slug: fontshop
+  label: FontShop
+  href: "https://www.fontshop.com/designers/niels-oeltjen"
