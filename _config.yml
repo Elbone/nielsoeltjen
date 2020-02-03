@@ -8,10 +8,17 @@
 # Site settings
 title: Niels Oeltjen
 email: niels@nielsoeltjen.com
-description: Artist and digital maker. Contact me here, and other places.
+description: Artist and design technologist. Contact me here, and other places.
 baseurl: ""
-url: "http://nielsoeltjen.com/" 
+url: "http://nielsoeltjen.com/"
 github_username:  Elbone
+
+profiles:
+  instagram: "https://instagram.com/nielsoeltjen/"
+  folio: "https://elbone.github.io/"
+  github: "https://github.com/elbone/"
+  twitter: "https://twitter.com/nielsoeltjen"
+
 
 # Build settings
 markdown: kramdown

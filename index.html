@@ -2,25 +2,83 @@
 layout: default
 ---
 
-<!-- MASTER -->
+<h1>Niels Oeltjen</h1>
+<img
+  src="/static/niels-oeltjen.jpg"
+  width="80" height="80"/>
+<p>»Nils Earlt·yen«</p>
+<h2>[¹Artist] + [²Design Technologist]</h2>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  {% for item in site.data.items %}
-    {% capture path %}svg/icon-{{ item.slug }}.svg{% endcapture %}
-    {% include {{ path }} %}
-  {% endfor %}
-</svg>
-
-<ul id="items">
-  {% for item in site.data.items %}
-    <li class="{{ item.slug}}">
-      <a href="{{ item.href }}" target="_blank" id="link-{{ item.slug }}" {% if item.mailto %}mailto={{ item.mailto }}{% endif %}>
-        <svg class="icon">
-          <use xlink:href="#icon-{{ item.slug }}"></use>
-        </svg>
-        <i>{{ item.label }}</i>
-      </a>
-    </li>
-  {% endfor %}
+<h3>File under</h3>
+<ul>
+  <li>art</li>
+  <li>technology</li>
+  <li>design</li>
+  <li>typography</li>
+  <li>ui+ux</li>
+  <li>css+js</li>
 </ul>
+
+<h3>Practice</h3>
+<p>
+  My creative output traverses
+  <a href="{{ site.profiles.instagram }}" data-title="Instagram">art</a>,
+  <a href="{{ site.profiles.folio }}" data-title="Folio">design</a>,
+  and
+  <a href="{{ site.profiles.github }}" data-title="Github">code</a>.
+  I’m endlessly curious about how technology
+  interacts with culture and natural systems,
+  and the conceptual threads that run between them.
+</p>
+
+<h3>Art</h3>
+<p>
+  My art practice emerged from my involvement
+  in Melbourne’s graffiti and street art scene
+  of the 2Ks, and has settled into a
+  <a href="{{ site.profiles.instagram }}" data-title="Instagram">project-based</a>
+  practice conceptually rooted at the intersection of
+  code, natural forms, and visual symbols.
+</p>
+
+<h3>Design</h3>
+<p>
+  I exploit commonalities across those disciplines
+  to create functional and engaging outcomes.
+  Solutions are collaboratively designed with systems
+  that may include mental frameworks, styleguides,
+  UI design systems, design processes, and tooling.
+</p>
+
+<h3>Expertise</h3>
+<p>
+  The facets of my creative practice include:
+</p>
+<ol>
+  <li>A contemporary art practice</li>
+  <li>Interactive design</li>
+  <li>Typographic design</li>
+  <li>Software programming</li>
+  <li>UI design</li>
+  <li>Illustration</li>
+  <li>Branding</li>
+  <li>Apparel design</li>
+</ol>
+
+<h3>Contact</h3>
+<p>
+  Check my
+  <a href="{{ site.profiles.instagram }}" data-title="instagram">Instagram</a>,
+  <a href="{{ site.profiles.folio }}" data-title="Case studies">Design folio</a>,
+  <a href="{{ site.profiles.twitter }}" data-title="Random">Twitter</a> or
+  <script>
+    const e = 'niels#nielsoeltjen+com'.replace('#', '@').replace('+', '.');
+    document.write('<a href="mailto:' + e + '" data-title="' + e + '">email me</a>.')
+  </script>
+</p>
+
+<small>
+  Fonts are <a href="https://fonts.google.com/specimen/IBM+Plex+Mono">IBM Plex Mono 300</a> and <a href="https://fonts.google.com/specimen/UnifrakturCook">UnifrakturCook</a>. <br>
+  Design and development by me.
+</small>
 
