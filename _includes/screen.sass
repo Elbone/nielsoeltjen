@@ -90,11 +90,13 @@ h3
   position: relative
   padding: 0 .3em
   margin-right: .1em
+  white-space: nowrap
 
   &::after
     content: '\00a0::'
 
 p
+  hyphens: auto
   &::before
     content: " "
 
@@ -111,8 +113,11 @@ p
 
     &::after
       content: attr(data-title)
-      font-size: .5em
+      white-space: nowrap
+      font-size: .5rem
+      padding: 0 .25rem
       position: absolute
+      z-index: 1
       left: 0
       top: 100%
       background-color: $color3
