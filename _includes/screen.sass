@@ -25,6 +25,7 @@ body
   padding: .5em
   padding-bottom: 30vh
   color: $color5
+  background-color: $color2
   background-image: linear-gradient($color2, $color3)
   background-attachment: fixed
 
@@ -115,11 +116,14 @@ p
       content: attr(data-title)
       white-space: nowrap
       font-size: .5rem
-      padding: 0 .25rem
+      padding: 0 .5rem 0 .25rem
       position: absolute
       z-index: 1
       left: 0
       top: 100%
+      background-image: url("data:image/svg+xml, <svg width='16px' height='8px' viewBox='0 0 16 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><polygon points='0,3 12,3 12,0 16,4 12,8 12,5 0,5 0,3'/></svg>")
+      background-repeat: no-repeat
+      background-position: right center
       background-color: $color3
       color: $color5
       display: none
