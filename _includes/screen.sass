@@ -75,7 +75,6 @@ small
       color: $color5
       background-color: $color1
 
-
 h1
   +dots($color5)
   background-color: $color4
@@ -96,9 +95,6 @@ h3
   margin-right: .1em
   white-space: nowrap
 
-  &::after
-    content: '\00a0::'
-
 p
   hyphens: auto
   &::before
@@ -114,7 +110,7 @@ p
     transition: background-color .2s ease
     padding: 0 .25em
     margin: 0 -.25em
-    
+
     &::after
       content: attr(data-title)
       background-color: $color3
