@@ -114,23 +114,27 @@ p
     transition: background-color .2s ease
     padding: 0 .25em
     margin: 0 -.25em
-
+    
     &::after
-      +arrow($color5)
       content: attr(data-title)
+      background-color: $color3
+      color: $color5
+      display: none
       white-space: nowrap
       font-size: .5rem
-      padding: 0 .675rem 0 .25rem
       position: absolute
       z-index: 1
       left: 0
       top: 100%
+      padding: 0 .25rem 0 .25rem
+
+    &[href*="http"]::after
+      +arrow($color5)
+      padding: 0 .675rem 0 .25rem
       background-size: 1em
       background-repeat: no-repeat
       background-position: right center
-      background-color: $color3
-      color: $color5
-      display: none
+
 
     &:hover
       +dots($color2)
